@@ -312,14 +312,24 @@ class _WhatsAppCompressPanelWidgetState
             ],
           ),
         ),
-        Switch(
-          value: value,
-          onChanged: onChanged,
-          activeThumbColor: color,
-          activeTrackColor: color.withAlpha(64),
-          inactiveThumbColor: const Color(0xFF4A4660),
-          inactiveTrackColor: const Color(0xFF2A2640),
-        ),
+          Switch(
+        value: value,
+        onChanged: onChanged,
+        // FIXED: Controls the thumb bubble color based on active/inactive states
+        thumbColor: MaterialStateProperty.resolveWith<Color>((states) {
+          if (states.contains(MaterialState.selected)) {
+            return color;
+          }
+          return const Color(0xFF4A4660); // Inactive thumb color
+        }),
+        // FIXED: Controls the background track color based on active/inactive states
+        trackColor: MaterialStateProperty.resolveWith<Color>((states) {
+          if (states.contains(MaterialState.selected)) {
+            return color.withAlpha(64);
+          }
+          return const Color(0xFF2A2640); // Inactive track color
+        }),
+      ),
       ],
     );
   }

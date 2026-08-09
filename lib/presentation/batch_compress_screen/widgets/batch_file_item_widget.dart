@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../theme/app_theme.dart';
 import '../../../widgets/custom_icon_widget.dart';
 import '../batch_compress_screen.dart';
-
+import 'dart:ui'; 
 class BatchFileItemWidget extends StatelessWidget {
   final BatchFileModel file;
   final VoidCallback onRemove;

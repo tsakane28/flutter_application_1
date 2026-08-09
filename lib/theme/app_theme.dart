@@ -29,7 +29,7 @@ class AppTheme {
 
   static ThemeData get lightTheme => ThemeData(
     useMaterial3: true,
-    colorScheme: ColorScheme.light(
+    colorScheme: const ColorScheme.light(
       primary: primary,
       onPrimary: Colors.white,
       primaryContainer: Color(0xFFE8E4FF),
@@ -45,14 +45,14 @@ class AppTheme {
     ),
     scaffoldBackgroundColor: backgroundLight,
     textTheme: GoogleFonts.outfitTextTheme().apply(
-      bodyColor: Color(0xFF1A1A2E),
-      displayColor: Color(0xFF1A1A2E),
+      bodyColor: const Color(0xFF1A1A2E),
+      displayColor: const Color(0xFF1A1A2E),
     ),
   );
 
   static ThemeData get darkTheme => ThemeData(
     useMaterial3: true,
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       primary: primary,
       onPrimary: Colors.white,
       primaryContainer: primaryContainer,
@@ -70,42 +70,45 @@ class AppTheme {
     ),
     scaffoldBackgroundColor: backgroundDark,
     textTheme: GoogleFonts.outfitTextTheme().apply(
-      bodyColor: Color(0xFFEAE8F5),
-      displayColor: Color(0xFFEAE8F5),
+      bodyColor: const Color(0xFFEAE8F5),
+      displayColor: const Color(0xFFEAE8F5),
     ),
-    appBarTheme: AppBarThemeData(
+    // FIXED: Changed AppBarThemeData to AppBarTheme
+    appBarTheme: AppBarTheme(
       backgroundColor: Colors.transparent,
       elevation: 0,
       scrolledUnderElevation: 0,
       titleTextStyle: GoogleFonts.outfit(
         fontSize: 18,
         fontWeight: FontWeight.w600,
-        color: Color(0xFFEAE8F5),
+        color: const Color(0xFFEAE8F5),
       ),
-      iconTheme: IconThemeData(color: Color(0xFFEAE8F5)),
+      iconTheme: const IconThemeData(color: Color(0xFFEAE8F5)),
     ),
-    cardTheme: CardThemeData(
+    // FIXED: Changed CardThemeData to CardTheme
+    cardTheme: CardTheme(
       color: surfaceDark,
       elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
     ),
-    inputDecorationTheme: InputDecorationThemeData(
+    // FIXED: Changed InputDecorationThemeData to InputDecorationTheme
+    inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: surfaceVariantDark,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: Color(0xFF4A4660)),
+        borderSide: const BorderSide(color: Color(0xFF4A4660)),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: Color(0xFF4A4660)),
+        borderSide: const BorderSide(color: Color(0xFF4A4660)),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: primary, width: 2),
+        borderSide: const BorderSide(color: primary, width: 2),
       ),
-      labelStyle: TextStyle(color: Color(0xFF9A96B8)),
-      hintStyle: TextStyle(color: Color(0xFF6B6888)),
+      labelStyle: const TextStyle(color: Color(0xFF9A96B8)),
+      hintStyle: const TextStyle(color: Color(0xFF6B6888)),
     ),
   );
 }

@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import '../../../theme/app_theme.dart';
 import '../../../widgets/custom_icon_widget.dart';
+import 'dart:ui'; 
 
 class ResultCardWidget extends StatefulWidget {
   final int originalKb;
