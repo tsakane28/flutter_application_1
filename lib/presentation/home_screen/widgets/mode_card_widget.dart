@@ -101,6 +101,7 @@ class _ModeCardWidgetState extends State<ModeCardWidget>
                 padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                   mainAxisAlignment: MainAxisAlignment.spaceBetween, // Added this line
                   children: [
                     Container(
                       width: 40,
@@ -121,26 +122,32 @@ class _ModeCardWidgetState extends State<ModeCardWidget>
                         ),
                       ),
                     ),
-                    const SizedBox(height: 12),
+                    const SizedBox(height: 1),
                     Text(
                       widget.title,
                       style: GoogleFonts.outfit(
-                        fontSize: 14,
+                        fontSize: 12,
                         fontWeight: FontWeight.w700,
                         color: const Color(0xFFEAE8F5),
                         height: 1.2,
                       ),
+                        maxLines: 2, // Limit lines to fit
+                        overflow: TextOverflow.ellipsis,
                     ),
-                    const SizedBox(height: 4),
-                    Text(
-                      widget.subtitle,
-                      style: GoogleFonts.outfit(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w400,
-                        color: const Color(0xFF9A96B8),
+                    const SizedBox(height: 2),
+                  Flexible(
+                      child: Text(
+                        widget.subtitle,
+                        style: GoogleFonts.outfit(
+                          fontSize: 10,
+                          fontWeight: FontWeight.w400,
+                          color: const Color(0xFF9A96B8),
+                        ),
+                          maxLines: 1, // Limit subtitle to a single line
+                          overflow: TextOverflow.ellipsis,
                       ),
                     ),
-                    const Spacer(),
+                   // const Spacer(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [

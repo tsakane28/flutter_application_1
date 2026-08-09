@@ -18,7 +18,7 @@ dependencies:
   flutter_svg: ^2.0.9               
 
   # CRITICAL: Typography
-  google_fonts: ^6.1.0              
+  google_fonts: 6.1.0              
 
   # CRITICAL: Data persistence and connectivity
   shared_preferences: ^2.2.2        
