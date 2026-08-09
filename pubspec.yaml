@@ -1,4 +1,4 @@
-name: flutter_application_1
+name: shrinkmaster
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -31,10 +31,29 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+
+  # CRITICAL: Core UI and responsive design - DO NOT REMOVE OR MODIFY
+  sizer: ^2.0.15                    # Required for responsive design system
+  flutter_svg: ^2.0.9               # Required for SVG icon support
+  icon_support: ^1.0.7              # Required for icon support
+
+  # CRITICAL: Typography - DO NOT REMOVE OR MODIFY
+  google_fonts: ^6.1.0              # Required for typography (replaces local fonts)
+
+  # CRITICAL: Data persistence and connectivity
+  shared_preferences: ^2.2.2        # Required for local data storage
+  web: ^1.1.1                       # Required for web support
+  
+  # Feature dependencies - safe to modify
+  cached_network_image: ^3.3.1      # Required for image caching
+  connectivity_plus: ^6.1.4         # Required for connectivity check
+  dio: ^5.4.0                       # Required for HTTP requests
+  fluttertoast: ^8.2.4              # Required for toast notifications
+  fl_chart: ^0.65.0                 # Required for charts
+  go_router: ^14.6.1                # Required for navigation (GoRouter)
 
 dev_dependencies:
   flutter_test:
@@ -43,9 +62,9 @@ dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
+  # package. See that file for information about deactivating additional lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0             # CRITICAL: Required for code quality - DO NOT REMOVE
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -59,9 +78,17 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/images/
+
+  # CRITICAL ASSET MANAGEMENT RULES:
+  # - DO NOT ADD NEW ASSET DIRECTORIES (assets/svg/, assets/icons/, etc.)
+  # - ONLY USE EXISTING AND ITEMS AVAILABLE IN THE DIRECTORIES LISTED ABOVE (assets/, assets/images/)
+
+  # CRITICAL FONTS RULE:
+  # - THIS PROJECT USES GOOGLE FONTS INSTEAD OF LOCAL FONTS
+  # - DO NOT ADD ANY LOCAL FONTS SECTION OR FONT FILES
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -72,8 +99,7 @@ flutter:
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
+  # list giving the asset and other descriptors. For example:
   # fonts:
   #   - family: Schyler
   #     fonts:
