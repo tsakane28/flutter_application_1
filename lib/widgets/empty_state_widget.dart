@@ -66,7 +66,7 @@ class EmptyStateWidget extends StatelessWidget {
             if (ctaLabel != null && onCta != null) ...[const SizedBox(height: 24),
               FilledButton.icon(
                 onPressed: onCta,
-                icon: CustomIconWidget(
+                icon: const CustomIconWidget(
                   iconName: 'add_rounded',
                   color: Colors.white,
                   size: 18,

@@ -153,7 +153,7 @@ class _AppNavigationState extends State<AppNavigation>
                             Container(
                               width: 4,
                               height: 4,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: AppTheme.primary,
                                 shape: BoxShape.circle,
                               ),

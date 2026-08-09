@@ -102,11 +102,11 @@ class BatchFileItemWidget extends StatelessWidget {
                           ),
                         ),
                         if (isDone && file.compressedKb != null) ...[
-                          Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 4),
                             child: CustomIconWidget(
                               iconName: 'arrow_forward_rounded',
-                              color: const Color(0xFF6B6888),
+                              color: Color(0xFF6B6888),
                               size: 10,
                             ),
                           ),
@@ -140,7 +140,7 @@ class BatchFileItemWidget extends StatelessWidget {
                       color: AppTheme.error.withAlpha(26),
                       shape: BoxShape.circle,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: CustomIconWidget(
                         iconName: 'close_rounded',
                         color: AppTheme.error,
@@ -158,7 +158,7 @@ class BatchFileItemWidget extends StatelessWidget {
               child: LinearProgressIndicator(
                 value: file.progress,
                 backgroundColor: AppTheme.primary.withAlpha(31),
-                valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primary),
+                valueColor: const AlwaysStoppedAnimation<Color>(AppTheme.primary),
                 minHeight: 3,
               ),
             ),

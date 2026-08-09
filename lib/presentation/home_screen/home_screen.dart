@@ -109,15 +109,15 @@ class _HomeScreenState extends State<HomeScreen>
             child: CustomScrollView(
               physics: const BouncingScrollPhysics(),
               slivers: [
-                SliverToBoxAdapter(
+                const SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(20, 16, 20, 0),
                     child: HomeHeaderWidget(),
                   ),
                 ),
-                SliverToBoxAdapter(
+                const SliverToBoxAdapter(
                   child: Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 24, 20, 0),
+                    padding: EdgeInsets.fromLTRB(20, 24, 20, 0),
                     child: PrivacyBadgeWidget(),
                   ),
                 ),
@@ -149,9 +149,9 @@ class _HomeScreenState extends State<HomeScreen>
                         iconName: 'image_rounded',
                         title: 'Image\nCompress',
                         subtitle: 'JPEG · Max 1920px',
-                        gradientColors: [
+                        gradientColors: const [
                           AppTheme.primary,
-                          const Color(0xFF9B59B6),
+                          Color(0xFF9B59B6),
                         ],
                         onTap: () => _navigateTo('Image'),
                         delay: 0,
@@ -160,9 +160,9 @@ class _HomeScreenState extends State<HomeScreen>
                         iconName: 'chat_rounded',
                         title: 'WhatsApp\nOptimizer',
                         subtitle: '200–500 KB target',
-                        gradientColors: [
-                          const Color(0xFF25D366),
-                          const Color(0xFF128C7E),
+                        gradientColors: const [
+                          Color(0xFF25D366),
+                          Color(0xFF128C7E),
                         ],
                         onTap: () => _navigateTo('WhatsApp'),
                         delay: 80,
@@ -171,9 +171,9 @@ class _HomeScreenState extends State<HomeScreen>
                         iconName: 'picture_as_pdf_rounded',
                         title: 'PDF\nCompress',
                         subtitle: 'Reduce PDF size',
-                        gradientColors: [
-                          const Color(0xFFE17055),
-                          const Color(0xFFD63031),
+                        gradientColors: const [
+                          Color(0xFFE17055),
+                          Color(0xFFD63031),
                         ],
                         onTap: () => _navigateTo('PDF'),
                         delay: 160,
@@ -182,9 +182,9 @@ class _HomeScreenState extends State<HomeScreen>
                         iconName: 'layers_rounded',
                         title: 'Batch\nCompress',
                         subtitle: 'Multiple files',
-                        gradientColors: [
-                          const Color(0xFFFDCB6E),
-                          const Color(0xFFE67E22),
+                        gradientColors: const [
+                          Color(0xFFFDCB6E),
+                          Color(0xFFE67E22),
                         ],
                         onTap: () => _navigateTo('Batch'),
                         delay: 240,

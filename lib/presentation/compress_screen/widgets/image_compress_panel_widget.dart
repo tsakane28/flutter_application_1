@@ -191,7 +191,7 @@ class _ImageCompressPanelWidgetState extends State<ImageCompressPanelWidget> {
               ? Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 18,
                       height: 18,
                       child: CircularProgressIndicator(
@@ -213,7 +213,7 @@ class _ImageCompressPanelWidgetState extends State<ImageCompressPanelWidget> {
               : Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CustomIconWidget(
+                    const CustomIconWidget(
                       iconName: 'compress',
                       color: Colors.white,
                       size: 18,

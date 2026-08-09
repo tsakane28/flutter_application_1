@@ -165,7 +165,7 @@ class _WhatsAppCompressPanelWidgetState
                       ? Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 18,
                               height: 18,
                               child: CircularProgressIndicator(
@@ -187,7 +187,7 @@ class _WhatsAppCompressPanelWidgetState
                       : Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            CustomIconWidget(
+                            const CustomIconWidget(
                               iconName: 'chat_rounded',
                               color: Colors.white,
                               size: 18,

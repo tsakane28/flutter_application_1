@@ -24,7 +24,7 @@ class PrivacyBadgeWidget extends StatelessWidget {
               color: AppTheme.secondary.withAlpha(38),
               shape: BoxShape.circle,
             ),
-            child: Center(
+            child: const Center(
               child: CustomIconWidget(
                 iconName: 'shield_rounded',
                 color: AppTheme.secondary,
@@ -56,7 +56,7 @@ class PrivacyBadgeWidget extends StatelessWidget {
               ],
             ),
           ),
-          CustomIconWidget(
+          const CustomIconWidget(
             iconName: 'check_circle_rounded',
             color: AppTheme.secondary,
             size: 18,

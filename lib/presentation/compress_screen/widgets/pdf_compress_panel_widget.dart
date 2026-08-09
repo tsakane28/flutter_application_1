@@ -135,7 +135,7 @@ class _PdfCompressPanelWidgetState extends State<PdfCompressPanelWidget> {
                       ),
                       child: Row(
                         children: [
-                          CustomIconWidget(
+                          const CustomIconWidget(
                             iconName: 'warning_amber_rounded',
                             color: AppTheme.warning,
                             size: 14,
@@ -181,7 +181,7 @@ class _PdfCompressPanelWidgetState extends State<PdfCompressPanelWidget> {
                       ? Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            SizedBox(
+                            const SizedBox(
                               width: 18,
                               height: 18,
                               child: CircularProgressIndicator(
@@ -203,7 +203,7 @@ class _PdfCompressPanelWidgetState extends State<PdfCompressPanelWidget> {
                       : Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            CustomIconWidget(
+                            const CustomIconWidget(
                               iconName: 'picture_as_pdf_rounded',
                               color: Colors.white,
                               size: 18,

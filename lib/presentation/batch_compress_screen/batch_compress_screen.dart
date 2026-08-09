@@ -276,8 +276,8 @@ class _BatchCompressScreenState extends State<BatchCompressScreen> {
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [AppTheme.primary, const Color(0xFF9B59B6)],
+                gradient: const LinearGradient(
+                  colors: [AppTheme.primary, Color(0xFF9B59B6)],
                 ),
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
@@ -290,7 +290,7 @@ class _BatchCompressScreenState extends State<BatchCompressScreen> {
               ),
               child: Row(
                 children: [
-                  CustomIconWidget(
+                  const CustomIconWidget(
                     iconName: 'add_rounded',
                     color: Colors.white,
                     size: 16,
@@ -333,7 +333,7 @@ class _BatchCompressScreenState extends State<BatchCompressScreen> {
                 color: AppTheme.error.withAlpha(38),
                 borderRadius: BorderRadius.circular(14),
               ),
-              child: CustomIconWidget(
+              child: const CustomIconWidget(
                 iconName: 'delete_rounded',
                 color: AppTheme.error,
                 size: 22,
@@ -382,8 +382,8 @@ class _BatchCompressScreenState extends State<BatchCompressScreen> {
           height: 54,
           decoration: BoxDecoration(
             gradient: allDone
-                ? LinearGradient(
-                    colors: [AppTheme.secondary, const Color(0xFF00956F)],
+                ? const LinearGradient(
+                    colors: [AppTheme.secondary, Color(0xFF00956F)],
                   )
                 : LinearGradient(
                     colors: _isCompressingAll
@@ -410,7 +410,7 @@ class _BatchCompressScreenState extends State<BatchCompressScreen> {
                 ? Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 18,
                         height: 18,
                         child: CircularProgressIndicator(

@@ -35,7 +35,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                 end: Alignment.bottomCenter,
               ),
             )
-          : BoxDecoration(color: AppTheme.backgroundDark),
+          : const BoxDecoration(color: AppTheme.backgroundDark),
       child: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -49,9 +49,9 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                     color: AppTheme.surfaceVariantDark,
                     borderRadius: BorderRadius.circular(10),
                   ),
-                  child: CustomIconWidget(
+                  child: const CustomIconWidget(
                     iconName: 'arrow_back_ios_new_rounded',
-                    color: const Color(0xFFEAE8F5),
+                    color: Color(0xFFEAE8F5),
                     size: 18,
                   ),
                 ),

@@ -37,7 +37,7 @@ class BatchAddFilesWidget extends StatelessWidget {
                   width: 1.5,
                 ),
               ),
-              child: Center(
+              child: const Center(
                 child: CustomIconWidget(
                   iconName: 'add_rounded',
                   color: AppTheme.primary,

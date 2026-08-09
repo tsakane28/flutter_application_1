@@ -21,14 +21,14 @@ class HomeHeaderWidget extends StatelessWidget {
                     width: 32,
                     height: 32,
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [AppTheme.primary, const Color(0xFF9B59B6)],
+                      gradient: const LinearGradient(
+                        colors: [AppTheme.primary, Color(0xFF9B59B6)],
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                       ),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: CustomIconWidget(
                         iconName: 'compress',
                         color: Colors.white,
@@ -70,10 +70,10 @@ class HomeHeaderWidget extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              Center(
+              const Center(
                 child: CustomIconWidget(
                   iconName: 'notifications_outlined',
-                  color: const Color(0xFFEAE8F5),
+                  color: Color(0xFFEAE8F5),
                   size: 20,
                 ),
               ),

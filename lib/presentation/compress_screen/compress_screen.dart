@@ -115,7 +115,7 @@ class _CompressScreenState extends State<CompressScreen>
             ),
             child: Row(
               children: [
-                Icon(Icons.lock_rounded, size: 12, color: AppTheme.secondary),
+                const Icon(Icons.lock_rounded, size: 12, color: AppTheme.secondary),
                 const SizedBox(width: 4),
                 Text(
                   'On-Device',

@@ -104,11 +104,11 @@ class RecentJobItemWidget extends StatelessWidget {
                         color: const Color(0xFF9A96B8),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 4),
                       child: CustomIconWidget(
                         iconName: 'arrow_forward_rounded',
-                        color: const Color(0xFF6B6888),
+                        color: Color(0xFF6B6888),
                         size: 10,
                       ),
                     ),

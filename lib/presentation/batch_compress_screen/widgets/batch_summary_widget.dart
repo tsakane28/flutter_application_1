@@ -89,7 +89,7 @@ class _BatchSummaryWidgetState extends State<BatchSummaryWidget>
             children: [
               Row(
                 children: [
-                  CustomIconWidget(
+                  const CustomIconWidget(
                     iconName: 'check_circle_rounded',
                     color: AppTheme.secondary,
                     size: 18,
@@ -115,8 +115,8 @@ class _BatchSummaryWidgetState extends State<BatchSummaryWidget>
                       color: const Color(0xFF9A96B8),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: CustomIconWidget(
                       iconName: 'arrow_forward_rounded',
                       color: AppTheme.secondary,
@@ -187,15 +187,15 @@ class _BatchSummaryWidgetState extends State<BatchSummaryWidget>
                       child: Container(
                         height: 44,
                         decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            colors: [AppTheme.primary, const Color(0xFF9B59B6)],
+                          gradient: const LinearGradient(
+                            colors: [AppTheme.primary, Color(0xFF9B59B6)],
                           ),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            CustomIconWidget(
+                            const CustomIconWidget(
                               iconName: 'share_rounded',
                               color: Colors.white,
                               size: 15,
@@ -235,10 +235,10 @@ class _BatchSummaryWidgetState extends State<BatchSummaryWidget>
                           width: 1,
                         ),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: CustomIconWidget(
                           iconName: 'save_alt_rounded',
-                          color: const Color(0xFFEAE8F5),
+                          color: Color(0xFFEAE8F5),
                           size: 18,
                         ),
                       ),

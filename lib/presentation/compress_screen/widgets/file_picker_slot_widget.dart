@@ -103,7 +103,7 @@ class FilePickerSlotWidget extends StatelessWidget {
                           color: AppTheme.error.withAlpha(26),
                           shape: BoxShape.circle,
                         ),
-                        child: Center(
+                        child: const Center(
                           child: CustomIconWidget(
                             iconName: 'close_rounded',
                             color: AppTheme.error,
